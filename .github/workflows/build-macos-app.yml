@@ -25,12 +25,12 @@ jobs:
         pip install pyinstaller
         if test -f requirements.txt; then pip install -r requirements.txt; fi
 
-    - name: Build app with PyInstaller
+    - name: Build .app with PyInstaller
       run: |
-        pyinstaller --onefile --windowed gemini_chat.py
+        pyinstaller --windowed --name="HardnSoft_AI" gemini_chat.py
 
-    - name: Upload built app
+    - name: Upload .app bundle
       uses: actions/upload-artifact@v4
       with:
-        name: gemini_chat_app
+        name: HardnSoft_AI.app
         path: dist/HardnSoft_AI.app
