@@ -33,4 +33,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: gemini_chat_app
-        path: dist/Hard'n'Soft_AI.app
+        path: dist/HardnSoft_AI.app
