@@ -27,10 +27,10 @@ jobs:
 
     - name: Build app with PyInstaller
       run: |
-        pyinstaller --onefile --windowed cool_script.py
+        pyinstaller --onefile --windowed gemini_chat.py
 
     - name: Upload built app
       uses: actions/upload-artifact@v3
       with:
-        name: cool_script_app
+        name: gemini_chat_app
         path: dist/cool_script
