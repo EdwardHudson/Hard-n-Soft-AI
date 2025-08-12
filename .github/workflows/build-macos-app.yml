@@ -27,7 +27,7 @@ jobs:
 
     - name: Build app with PyInstaller
       run: |
-        pyinstaller --onefile --windowed gemini_chat.py \
+        pyinstaller --onefile --windowed Hard'n'Soft AI.py \
           --name HardnSoft_AI
 
     - name: Zip .app bundle
